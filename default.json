@@ -1,0 +1,31 @@
+
+{
+	"log": {
+        "access": "none",
+        "error": "none",
+        "loglevel": "none"
+	},
+	"inbounds":  [{
+		"port":  2096,
+		"listen":   "127.0.0.1",
+		"protocol":   "vless",
+		"settings":  {
+			"clients":  [{
+			"id":   "72fd09c4-42bd-3cc9-10da-f5c791d16841",
+			"level": 0,
+			"email": "pr@cc.com"
+			}],
+	"decryption": "none"
+	},
+	"streamSettings":  {
+		"network":  "ws",
+		"security": "none",
+		"wsSettings":  {
+			"path":   "/tunnel" }
+		}
+	}],
+	"outbounds":  [{
+		"protocol":   "freedom",
+		"settings":  {}
+	}]
+}

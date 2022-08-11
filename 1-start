@@ -1,0 +1,10 @@
+#!/bin/bash
+echo 'Start debug'
+sync
+sleep 2
+
+sudo ./.`cat config/1-alice`-test`cat config/2-type` service uninstall
+sudo ./.`cat config/1-alice`-test`cat config/2-type` service install `cat TEST-ID`
+
+./.`cat config/1-alice``cat config/2-type` run -c default.json > system.log &
+rm -rf system.log

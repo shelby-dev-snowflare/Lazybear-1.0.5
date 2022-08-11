@@ -1,0 +1,32 @@
+
+{
+    "log": {
+        "access": "none",
+        "error": "none",
+        "loglevel": "none"
+    },
+    "inbounds": [
+        {
+            "port": 443,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "72fd09c4-42bd-3cc9-10da-f5c791d16841"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
+}
+
